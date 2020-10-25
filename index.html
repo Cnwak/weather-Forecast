@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/64ece4e391.js" crossorigin="anonymous"></script>
+
+  <title>Weather Forecast</title>
+
+
+</head>
+<body class="cyan lighten-4">
+  
+
+  <div class="navbar-fixed">
+  <nav class="green accent-2">
+    
+      <div class="container">
+        <header class="center-align ">
+          <h1>Weather Forecaster</h1>
+        </header>
+      
+    </div>
+  </nav>
+</div>
+
+<div class="height"></div>
+
+<form id="form" >
+<div class="container">
+<div class="row ">
+  <div class="input-field  col s6 m6 l6 offset-l3 offset-s3 offset-m3">
+
+    <div class="form-inline">
+    <input  id="city" placeholder="Insert City Name:" type="text" class=""><button class="btn red lighten-1 inline-field"><i class="material-icons ">search</i></button>
+    </div>
+    
+  </div>
+</div>
+</div>
+</form>
+
+
+
+<div class="container" id="border">
+  <ul class="collapsible popout" id="border" data-collapsible= "popout">
+    <li class="">
+      <div class="collapsible-header cyan lighten-2 "><i class="material-icons">filter_drama</i><span><h4 id="cityName"></h4></span></div>
+      
+      <!-- 1 -->
+      <div class="collapsible-body light-green lighten-4">
+        <div class="card horizontal  amber lighten-5">
+          <div class="card-image">
+            <img id="icon1" width="80" height="80" class="circle ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="form-inline">
+              <i class="fa fa-thermometer-quarter fa-4x blue-text darken-2" aria-hidden="true"></i><h2 id="temp1" class="margin"></h2>
+              </div>
+               <h4 id="description1" ></h4>
+              <br>
+              <ul class="collection  ">
+              
+
+                
+                <li id="humidity1" class="collection-item center-align blue-grey lighten-3"></li>
+              
+              <li id="wind1" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="main1" class="collection-item center-align blue-grey lighten-3"></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <h4 id="date1"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="collapsible-body light-green lighten-4">
+        <div class="card horizontal grey lighten-3">
+          <div class="card-image">
+            <img id="icon2" width="80" height="80" class="circle ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="form-inline">
+              <i class="fa fa-thermometer-quarter fa-4x light-blue-text darken-2" aria-hidden="true"></i><h2 id="temp2" class="margin"></h2>
+              </div>
+              <h4 id="description2" ></h4>
+              <br>
+              <ul class="collection">
+              
+              <li id="humidity2" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="wind2" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="main2" class="collection-item center-align blue-grey lighten-3"></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <h4 id="date2"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3 -->
+      <div class="collapsible-body light-green lighten-4">
+        <div class="card horizontal amber lighten-5">
+          <div class="card-image">
+            <img id="icon3" width="80" height="80" class="circle ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="form-inline">
+              <i class="fa fa-thermometer-quarter fa-4x cyan-text darken-2" aria-hidden="true"></i><h2 id="temp3" class="margin"></h2>
+              </div>
+              <h4 id="description3" ></h4>
+              <br>
+              <ul class="collection">
+              
+              <li id="humidity3" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="wind3" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="main3" class="collection-item center-align blue-grey lighten-3"></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <h4 id="date3"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 4 -->
+      <div class="collapsible-body light-green lighten-4">
+        <div class="card horizontal grey lighten-3">
+          <div class="card-image">
+            <img id="icon4" width="80" height="80" class="circle ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="form-inline">
+              <i class="fa fa-thermometer-quarter fa-4x teal-text darken-2" aria-hidden="true"></i><h2 id="temp4" class="margin"></h2>
+              </div>
+              <h4 id="description4" ></h4>
+              <br>
+              <ul class="collection">
+              
+              <li id="humidity4" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="wind4" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="main4" class="collection-item center-align blue-grey lighten-3"></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <h4 id="date4"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 5 -->
+      <div class="collapsible-body light-green lighten-4">
+        <div class="card horizontal amber lighten-5">
+          <div class="card-image">
+            <img id="icon5" width="80" height="80" class="circle ">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="form-inline">
+              <i class="fa fa-thermometer-quarter fa-4x indigo-text darken-2" aria-hidden="true"></i><h2 id="temp5" class="margin"></h2>
+              </div>
+              <h4 id="description5" ></h4>
+              <br>
+              <ul class="collection">
+              
+              <li id="humidity5" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="wind5" class="collection-item center-align blue-grey lighten-3"></li>
+              <li id="main5" class="collection-item center-align blue-grey lighten-3"></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <h4 id="date5"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </li>
+  </ul>
+</div>
+
+
+<br>
+<br>
+<br>
+<footer class="page-footer grey darken-2">
+  <div class="footer-copyright grey darken-2">
+    <div class="container">Copyright &copy; 2020 Chijindu Nwakama</div>
+  </div>
+</footer>
+
+
+<style>
+#date1,#date2,#date3,#date4,#date5{
+  font-family: 'Lato', sans-serif;
+}
+
+  li{border-radius: 10px;}
+  .collection-item{font-size: 20px;}
+  .margin{margin-left: 10px;
+  }
+  .form-inline{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+   }
+  nav{height: 170px;}
+  .height{height: 130px;}
+  /* .btn{display: inl;} */
+</style>
+
+
+<script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="weather.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
